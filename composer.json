@@ -1,0 +1,23 @@
+{
+    "name":        "orukusaki/repovid",
+    "description": "Uses Gource to generate videos for a collection of git repos",
+    "keywords":    ["gource","cli"],
+    "homepage":    "http://orukusaki.github.com/RepoVid",
+    "license":     "MIT",
+    "autoload":{
+        "psr-0":{ "RepoVid": "src/" }
+    },
+    "authors":[
+        { "name":  "Peter Smith", "email": "peter@orukusaki.co.uk" }
+    ],
+    "require":{
+        "php":        ">=5.3.3",
+	   "cilex/cilex": "1.0.x-dev"
+    },
+    "require-dev":{
+    },
+    "suggest":{
+    },
+    "extra":{
+    }
+}

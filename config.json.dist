@@ -1,0 +1,36 @@
+{
+    "gourceArgs": [
+        "-s 0.1",
+        "-f",
+        "--start-position {repo/startPosition}",
+        "--highlight-all-users",
+        "--file-idle-time 0",
+        "--title \"{repo/name}\"",
+        "-1360x768",
+        "-o",
+        "-"
+    ],
+    "avconvArgs": [
+        "-f image2pipe",
+        "-vcodec ppm",
+        "-i -",
+        "-r 30",
+        "-c libx264",
+        "-y {paths/video}"
+    ],
+    "repos": [
+        {
+            "name": "RepoVid",
+            "remote": "orukusaki",
+            "branch": "master"
+        }
+   ],
+    "paths": {
+        "repos": "/Users/psmith/git",
+        "video": "/Users/psmith/gitvideos/{repo/name}.mp4",
+        "remoteUrl": "https://github.com/{repo/remote}/{repo/name}.git"
+    },
+    "project": {
+        "start": "2012-11-28 10:00:00"
+    }
+}
